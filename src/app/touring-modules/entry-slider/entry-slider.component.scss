@@ -1,0 +1,28 @@
+.pt-5,
+.py-5 {
+  padding-top: 23rem !important;
+}
+
+.slideimg {
+  background-size: cover !important;
+}
+
+h2 {
+  height: inherit;
+  background: inherit;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font: 900 7vmin/10vh cookie, cursive;
+  text-align: center;
+  -webkit-filter: invert(9) grayscale(1) contrast(9)
+    drop-shadow(0.09em 0.09em orange);
+  filter: invert(9) grayscale(1) contrast(9) drop-shadow(0.09em 0.09em orange);
+}
+
+@media screen and (max-width: 700px) {
+  .pt-5,
+  .py-5 {
+    padding-top: 15rem !important;
+  }
+}
