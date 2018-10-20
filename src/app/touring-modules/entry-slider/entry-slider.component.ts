@@ -29,17 +29,21 @@ export class EntrySliderComponent implements OnInit {
   }
 
   findGenre(show: any, showType: any) {
-    return showType === 'M'
-      ? show.map(
-          genere_id =>
-            MOVIE_GENRES.find(
-              master_genereid => master_genereid.id === genere_id
-            ).name
-        )
-      : show.map(
-          genere_id =>
-            TV_GENRES.find(master_genereid => master_genereid.id === genere_id)
-              .name
-        );
+    let genere = [];
+    if (showType === 'M') {
+      genere = show.map(
+        genere_id =>
+          MOVIE_GENRES.find(master_genereid => master_genereid.id === genere_id)
+            .name
+      );
+    } else {
+      genere = show.map(
+        genere_id =>
+          TV_GENRES.find(master_genereid => master_genereid.id === genere_id)
+            .name
+      );
+    }
+
+    return genere;
   }
 }

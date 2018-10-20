@@ -10,7 +10,7 @@
         <h2>{{slide.title ? slide.title : slide.name}}</h2>
         <div class="lead">
           <h3>Voted:{{slide.vote_count}} Popularity:{{slide.popularity}} IMDB:{{slide.vote_average}}</h3>
-          <p>{{findGenre(slide.genre_ids,slide.title ? 'M':'T').join(',')}}</p>
+          <p>{{findGenre(slide.genre_ids,slide.title ? 'M':'T').join(', ')}}</p>
         </div>
       </div>
     </slide>

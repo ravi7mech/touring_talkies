@@ -25,7 +25,7 @@ export class TouringAPIService {
       .get<ApiResponse>(
         BaseURL.Url +
           Sections.Trend +
-          Trend_MediaType.ALL +
+          Trend_MediaType.MOVIE +
           Trend_TimeWindow.WEEK,
         { observe: 'response' }
       )
