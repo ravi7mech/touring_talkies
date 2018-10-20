@@ -39,3 +39,4 @@ testem.log
 Thumbs.db
 .firebaserc
 firebase.json
+github_commit_info.txt
